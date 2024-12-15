@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpentry Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Function to display alert message on form submission
+        function confirmBooking(event) {
+            // Prevent form submission to show the alert first
+            event.preventDefault();
+            
+            // Show alert message
+            alert('Your booking has been successfully done! We will confirm the details shortly.');
+
+            // Optionally, you can submit the form after showing the alert
+            // document.querySelector('.booking-form').submit();
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">ServiceHub</h1>
+            <a href="home.html" class="btn">Back to Home</a>
+        </nav>
+    </header>
+    <section class="service-detail">
+        <img src="images/carpentry.jpg" alt="Carpentry Services Image" class="service-image">
+        <h2>Carpentry Services</h2>
+        <p>Expert woodworking, furniture repairs, and custom carpentry services.</p>
+        <form class="booking-form" action="submit_booking.html" method="post" onsubmit="confirmBooking(event)">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+            
+            <button type="submit" class="btn">Book Now</button>
+            <a href="payment.html" class="btn">Pay here</a>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 ServiceHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Stop Service Platform</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>  
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">ServiceHub</h1>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="btn">Register</a></li>
+                <li><a href="Multiligual.html" class="btn">Language</a></li>
+                <li><a href="index1.html" class="btn">FAQ</a></li>
+                
+            </ul>
+            <a href="#cta" class="btn">Get Started</a>
+
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Your One-Stop Solution for All Your Service Needs</h2>
+            <p>Efficient, reliable, and accessible maintenance services, anytime and anywhere!</p>
+            <a href="#services" class="btn hero-btn">Explore Services </a>
+        </div>
+    </section>   
+    <section id="services" class="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card" onclick="redirect('technician.html')">
+                <img src="images/technician.jpg" alt="AC Technician">
+                <h3>AC Technicians</h3>
+                <p>Expert AC repair and maintenance solutions.</p>
+                <ul class="features">
+                    <li>✔ Appliance Installation</li>
+                    <li>✔ Repairs and Maintenance</li>
+                    <li>✔ On-Site Support</li>
+                </ul>
+                <div class="details">
+                    <p>Starting at: <strong>$25/hour</strong></p>
+                </div>
+                <a href="#booking" class="btn">Book a Technician</a>
+            </div>
+            <div class="service-card" onclick="redirect('electrician.html')">
+                <img src="images/electrician.jpg" alt="Electricians">
+                <h3>Electricians</h3>
+                <p>Reliable electrical repair and installation services.</p>
+                <ul class="features">
+                    <li>✔ Wiring & Rewiring</li>
+                    <li>✔ Lighting Installation</li>
+                    <li>✔ Electrical Safety Checks</li>
+                </ul>
+                <div class="details">
+                    <p>Starting at: <strong>$20/hour</strong></p>
+                </div>
+                <a href="#booking" class="btn">Book a Electrician</a>
+            </div>
+            <div class="service-card" onclick="redirect('plumber.html')">
+                <img src="images/plumber.jpg" alt="Plumbers">
+                <h3>Plumbers</h3>
+                <p>Fast and efficient plumbing solutions.</p>
+                <ul class="features">
+                    <li>✔ Leak Repairs</li>
+                    <li>✔ Pipe Installation</li>
+                    <li>✔ Drain Cleaning</li>
+                </ul>
+                <div class="details">
+                    <p>Starting at: <strong>$30/hour</strong></p>
+                </div>
+                <a href="#booking" class="btn">Book a Plumber</a>
+            </div>
+            <div class="service-card" onclick="redirect('mechanic.html')">
+                <img src="images/mechanic.jpg" alt="Mechanics">
+                <h3>Mechanics</h3>
+                <p>Automobile repair and maintenance experts.</p>
+                <ul class="features">
+                    <li>✔ Engine Repairs</li>
+                    <li>✔ Battery Replacement</li>
+                    <li>✔ Brake Servicing</li>
+                </ul>
+                <div class="details">
+                    <p>Starting at: <strong>$40/hour</strong></p>
+                </div>
+                <a href="#booking" class="btn">Book a Mechanic</a>
+            </div>
+            <div class="service-card" onclick="redirect('carpenter.html')">
+                <img src="images/carpenter.jpg" alt="Carpenters">
+                <h3>Carpenters</h3>
+                <p>Professional carpentry services for your needs.</p>
+                <ul class="features">
+                    <li>✔ Furniture Repairs</li>
+                    <li>✔ Custom Woodwork</li>
+                    <li>✔ Door & Window Fittings</li>
+                </ul>
+                <div class="details">
+                    <p>Starting at: <strong>$30/hour</strong></p>
+                </div>
+                <a href="#booking" class="btn">Book a Carpenter</a>
+            </div>
+            <div class="service-card" onclick="redirect('pest.html')">
+                <img src="images/cleaner.jpg" alt="Pest Control">
+                <h3>Cleaning and Pest Control</h3>
+                <p>Effective solutions for a pest-free home.</p>
+                <ul class="features">
+                    <li>✔ Deep Cleaning</li>
+                    <li>✔ Pest Extermination</li>
+                    <li>✔ Sanitization Services</li>
+                </ul>
+                <div class="details">
+                    <p>Starting at: <strong>$25/hour</strong></p>
+                </div>
+                <a href="#booking" class="btn">Book a pest controller</a>
+            </div>
+            <div class="service-card" onclick="redirect('appliances.html')">
+                <img src="images/ac.jpg" alt="Home Appliances">
+                <h3>Home Appliances Repair</h3>
+                <p>Top-notch repair for your appliances.</p>
+                <ul class="features">
+                    <li>✔ Refrigerator Repairs</li>
+                    <li>✔ Washing Machine Service</li>
+                    <li>✔ Microwave Repairs</li>
+                </ul>
+                <div class="details">
+                    <p>Starting at: <strong>$35/hour</strong></p>
+                </div>
+                <a href="#booking" class="btn">Book a home appliancer</a>
+            </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <h2>Ready to Book a Service?</h2>
+        <p>Connect with trusted service providers in just a few clicks.</p>
+        <a href="contactus.html" class="btn">Contact Us</a>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 ServiceHub. All rights reserved.</p>
+    </footer>
+    <script>
+        function redirect(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

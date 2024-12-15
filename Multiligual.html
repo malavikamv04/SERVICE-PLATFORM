@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual and Accessible App</title>
+    <link rel="stylesheet" href="mutlilingual.css">
+</head>
+<body>
+    <!-- Main Content Section -->
+    <header>
+        <header class="header">
+            <nav class="navbar">
+                <a href="home.html" class="btn">Back to Home</a>
+        <h1 id="page-title">Welcome to Our Website</h1>
+        
+        <!-- Language Selector -->
+        <label for="language-selector" class="visually-hidden">Choose a language</label>
+        <select id="language-selector" aria-label="Language Selector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+        </select>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="section-title">Accessibility Features</h2>
+            <p id="description">Our website is designed to be accessible for everyone. Use the options above to change the language and enjoy an enhanced browsing experience.</p>
+        </section>
+
+        <!-- High-Contrast Mode Toggle -->
+        <button id="contrast-toggle" onclick="toggleContrast()" aria-label="Toggle high contrast mode">
+            Enable High Contrast Mode
+        </button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Accessible Website</p>
+    </footer>
+
+    <script>
+        // Language change function
+        function changeLanguage() {
+            const selectedLanguage = document.getElementById("language-selector").value;
+            const textContent = {
+                en: {
+                    pageTitle: "Welcome to Our Website",
+                    sectionTitle: "Accessibility Features",
+                    description: "Our website is designed to be accessible for everyone. Use the options above to change the language and enjoy an enhanced browsing experience."
+                },
+                es: {
+                    pageTitle: "Bienvenido a Nuestro Sitio Web",
+                    sectionTitle: "Funciones de Accesibilidad",
+                    description: "Nuestro sitio web está diseñado para ser accesible para todos. Utilice las opciones anteriores para cambiar el idioma y disfrutar de una experiencia de navegación mejorada."
+                },
+                fr: {
+                    pageTitle: "Bienvenue sur Notre Site Web",
+                    sectionTitle: "Fonctionnalités d'Accessibilité",
+                    description: "Notre site Web est conçu pour être accessible à tous. Utilisez les options ci-dessus pour changer la langue et profiter d'une expérience de navigation améliorée."
+                },
+                de: {
+                    pageTitle: "Willkommen auf unserer Website",
+                    sectionTitle: "Barrierefreie Funktionen",
+                    description: "Unsere Website ist für alle zugänglich. Nutzen Sie die Optionen oben, um die Sprache zu ändern und ein verbessertes Surferlebnis zu genießen."
+                }
+            };
+
+            // Update content based on selected language
+            document.getElementById("page-title").innerText = textContent[selectedLanguage].pageTitle;
+            document.getElementById("section-title").innerText = textContent[selectedLanguage].sectionTitle;
+            document.getElementById("description").innerText = textContent[selectedLanguage].description;
+        }
+
+        // High-Contrast Mode Toggle
+        function toggleContrast() {
+            document.body.classList.toggle("high-contrast");
+            const button = document.getElementById("contrast-toggle");
+            button.innerText = button.innerText === "Enable High Contrast Mode" ? "Disable High Contrast Mode" : "Enable High Contrast Mode";
+        }
+    </script>
+</body>
+</html>

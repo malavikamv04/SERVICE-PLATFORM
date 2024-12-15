@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="home.html" class="btn">Back to Home</a>
+    <div class="payment-container">
+        <h2>Payment Form</h2>
+        <form action="your_payment_gateway_api_endpoint" method="POST">
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" required placeholder="Enter your card number">
+            </div>
+
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date</label>
+                <input type="text" id="expiryDate" name="expiryDate" required placeholder="MM/YY">
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required placeholder="Enter your CVV">
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" name="amount" required placeholder="Enter the amount">
+            </div>
+
+            <button type="submit" class="pay-button">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>

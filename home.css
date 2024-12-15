@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-color: #f5f7fa;
+    color: #444;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.header {
+    background-color: #5c2ac5; /* Purple */
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffd700; /* Gold */
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Gold */
+}
+
+.register-btn {
+    background-color: transparent; /* Remove any background color */
+    color: #000; /* Set a default color (black or any other color you prefer) */
+    border: 1px solid #000; /* Add a border, or change it to your preferred color */
+}
+
+.register-btn:hover {
+    background-color: #f0f0f0; /* Optional: Add a background color for hover effect */
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(92, 42, 197, 0.9), rgba(92, 42, 197, 0.7)), url('https://via.placeholder.com/1500x500');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #5c2ac5;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid #5c2ac5;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #5c2ac5;
+}
+
+.service-card h3 {
+    font-size: 1.6rem;
+    margin: 15px 0;
+    color: #444;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 1rem;
+    margin: 10px 20px;
+}
+
+.features {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.features li {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+    margin: 5px 15px;
+}
+
+.details p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #5c2ac5;
+}
+
+/* Call-to-Action Section */
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #5c2ac5;
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    font-size: 1rem;
+    background-color: #f8f8f8a8;
+    color: #5c2ac5;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}

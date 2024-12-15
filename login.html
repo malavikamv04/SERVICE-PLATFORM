@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZETAONE Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h1>ZETAONE <br>Login</h1>
+      <p>Your one-stop solution for all service needs!</p>
+      <form action="#" method="post">
+        <div class="input-group">
+          <label for="role">Login as</label>
+          <select id="role" name="role" required>
+            <option value="" disabled selected>Select your role</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+            <option value="service_provider">Service Provider</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="login-btn" ><a href="home.html">Login</a></button>
+        <div class="extra-links">
+          <a href="#">Forgot Password?</a>
+          <a href="register.html">Register Now</a>
+          <div class="extra-links">
+            <a href="home.html">Back to Home</a>
+        </div>    
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- <script>
+    document.querySelector('form').addEventListener('submit', async function (event) {
+      event.preventDefault(); // Prevent the default form submission
+  
+      // Capture form data
+      const role = document.getElementById('role').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+  
+      // Validate the form inputs
+      if (!role || !email || !password) {
+        alert('Please fill in all fields.');
+        return;
+      }
+  
+      try {
+        // Send data to the server
+        const response = await fetch('http://127.0.0.1:5500/api/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ role, email, password }),
+        });
+  
+        const result = await response.json();
+  
+        // Handle server response
+        if (response.ok) {
+          alert('Login successful!');
+          // Redirect or perform additional actions
+          window.location.href = 'dashboard.html'; // Change to your desired URL
+        } else {
+          alert(`Login failed: ${result.message}`);
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again later.');
+      }
+    });
+  </script> -->
+  
+</body>
+</html>

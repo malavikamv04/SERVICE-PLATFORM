@@ -1,0 +1,67 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Visually Hide Labels for Screen Readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+/* Contrast Mode Styles */
+body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+body.high-contrast button, body.high-contrast select {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* General Button Styling */
+button, select {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Focus Styles for Keyboard Navigation */
+button:focus, select:focus {
+    outline: 2px solid #ff9900;
+}
+
+/* Improve Button Accessibility */
+button[aria-label="Toggle high contrast mode"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+button[aria-label="Toggle high contrast mode"]:hover {
+    background-color: #45a049;
+}
+
+button[aria-label="Toggle high contrast mode"]:active {
+    background-color: #3e8e41;
+}
